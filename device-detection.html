@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Device Detection in Js</title>
+</head>
+<body>
+	<h1 id="platform"></h1>
+
+	<script>
+		var platform = document.getElementById('platform');
+
+		if (navigator.userAgent.match(/iPhone/i)){
+			platform.textContent = "It's iPhone !!";
+		}
+		else if (navigator.userAgent.match(/iPad/i)){
+			platform.textContent = "It's iPad !!";
+		}else if (screen.width <= 699) {
+			platform.textContent = "It's Mobile";
+		}else if (navigator.userAgent.match(/Mac OS X/i)){
+			platform.textContent = "It's Mac !!";
+		}
+		else{
+			platform.textContent = "It's Windows !!";
+		}
+	</script>
+
+</body>
+</html>
