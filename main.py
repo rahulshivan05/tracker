@@ -19,13 +19,14 @@ def check_price():
 	converted_price = price[0:8]
 
 	if (converted_price < ₹ 16,750):
-		send_mail()
+		send_mail() # not work because not implement. 
+		
 
 	print(converted_price)
 
 
 
 	print(title.strip())
-
-def send_mail():
+# Not implemented.
+# def send_mail():
 		
